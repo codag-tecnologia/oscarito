@@ -823,13 +823,16 @@ h4 {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 120px 15px 60px;
-        overflow-x: hidden;
+        padding: 100px 15px 80px;
+        overflow: visible;
+        min-height: auto;
+        height: auto;
     }
     
     .hero-content {
         margin-right: 0;
         margin-bottom: 2rem;
+        margin-top: 0;
     }
     
     .hero h1 {
@@ -885,6 +888,17 @@ h4 {
         justify-content: center;
     }
     
+    /* Ajuste dos dots do carrossel no mobile */
+    .carousel-dots {
+        bottom: -40px;
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    .carousel-container {
+        margin-bottom: 20px;
+    }
+    
     .gallery-grid {
         grid-template-columns: 1fr;
     }
@@ -934,11 +948,15 @@ h4 {
     
     /* Ajuste adicional do hero para telas pequenas */
     .hero {
-        padding: 100px 10px 40px;
+        padding: 80px 10px 60px;
+        min-height: auto;
+        height: auto;
+        overflow: visible;
     }
     
     .hero-content {
         margin-bottom: 1.5rem;
+        margin-top: 0;
     }
 }
 
