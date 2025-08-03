@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscarito Restaurante - Sabores Autênticos</title>
+    <link rel="icon" type="image/jpeg" href="84735102_2543992655860100_431965970722979840_n.png">
+    <!-- Icons para dispositivos móveis -->
+    <link rel="apple-touch-icon" href="84735102_2543992655860100_431965970722979840_n.jpg">
+    <meta name="theme-color" content="#D4A574">
+    
+    <!-- Schema.org JSON-LD para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Oscarito Restaurante",
+        "description": "Restaurante a quilo com sabores autênticos e cardápio diário variado. Especialidades brasileiras e pratos tradicionais.",
+        "image": "logo.png",
+        "logo": "logo.png",
+        "url": "https://oscaritorestaurante.com.br",
+        "telephone": "+55-71-4113-1306",
+        "email": "contato@oscaritorestaurante.com.br",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Alameda Praia do Tubarao, QA12, LT07",
+            "addressLocality": "Lauro de Freitas",
+            "addressRegion": "BA",
+            "postalCode": "42708-730",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-12.8944",
+            "longitude": "-38.3219"
+        },
+        "openingHours": [
+            "Tu-Su 11:30-15:15"
+        ],
+        "servesCuisine": ["Brazilian", "Traditional"],
+        "priceRange": "$$",
+        "paymentAccepted": ["Cash", "Credit Card", "Debit Card"],
+        "currenciesAccepted": "BRL",
+        "hasMenu": {
+            "@type": "Menu",
+            "name": "Cardápio Diário",
+            "description": "Menu a quilo com pratos que variam diariamente",
+            "hasMenuSection": [
+                {
+                    "@type": "MenuSection",
+                    "name": "Terça-feira",
+                    "hasMenuItem": [
+                        {
+                            "@type": "MenuItem",
+                            "name": "Bacalhau à Gomes Sá",
+                            "description": "Tradicional prato português com batatas, ovos e cebolas"
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Língua à Provençal",
+                            "description": "Língua bovina ao molho provençal com ervas finas"
+                        }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Todos os dias",
+                    "hasMenuItem": [
+                        {
+                            "@type": "MenuItem",
+                            "name": "Churrasco",
+                            "description": "Carnes grelhadas no ponto"
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Grelhados",
+                            "description": "Variedade de carnes e peixes grelhados"
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Pratos Quentes",
+                            "description": "Variedade de pratos quentes tradicionais e saborosos"
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Saladas",
+                            "description": "Saladas frescas e variadas com ingredientes selecionados"
+                        }
+                    ]
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "127"
+        },
+        "sameAs": [
+            "https://www.facebook.com/oscaritorestaurante",
+            "https://www.instagram.com/oscaritorestaurante"
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Oscarito Restaurante" class="logo-image">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindos ao Oscarito</h1>
+            <p>Uma experiência gastronômica única com sabores autênticos e ambiente acolhedor</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+                <a href="#contact" class="btn btn-secondary">Reservar Mesa</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="carousel-container">
+                <div class="carousel-circle">
+                    <div class="carousel-slide active">
+                        <img src="images/restaurant-interior.jpg" alt="Interior do Restaurante Oscarito">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/Imagem 1.png" alt="Interior do Restaurante Oscarito">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/imagem 2.png" alt="Interior do Restaurante Oscarito">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/imagem 3.png" alt="Interior do Restaurante Oscarito">
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="carousel-arrow carousel-prev" aria-label="Slide anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-arrow carousel-next" aria-label="Próximo slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Navigation Dots -->
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nossa História</h2>
+                    <p>O Oscarito Restaurante nasceu da paixão pela culinária tradicional e do desejo de criar momentos especiais através da comida. Há mais de 30 anos, servimos pratos preparados com ingredientes frescos e muito amor.</p>
+                    <p>Nossa equipe de chefs experientes combina técnicas tradicionais com toques modernos, criando uma experiência gastronômica inesquecível para toda a família.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Ingredientes Frescos</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Feito com Amor</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Ambiente Familiar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="images/imageh.png" alt="Interior do Oscarito ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Nosso Cardápio</h2>
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <h3>🗓️ Terça-feira</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Bacalhau à Gomes Sá</h4>
+                                <p>Tradicional prato português com batatas, ovos e cebolas</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/bacalhau.png" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Línguiça à Provençal</h4>
+                                <p>Línguiça bovina ao molho provençal com ervas finas</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/linguica-a-provencal.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>🗓️ Quarta-feira</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Dobradinha</h4>
+                                <p>Tradicional dobradinha com feijão branco e linguiça</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/dobradinha.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Galinha com Quiabo</h4>
+                                <p>Galinha caipira refogada com quiabo fresco</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/galinha+quiabo.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Aipim ao Queijo</h4>
+                                <p>Aipim cremoso gratinado com queijo derretido</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/aipimaoqueijo.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>🗓️ Quinta-feira</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cozido</h4>
+                                <p>Cozido completo com carnes, legumes e verduras</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/cozido.jpeg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Strogonoff</h4>
+                                <p>Strogonoff cremoso servido com arroz e batata palha</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/strogonoff.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Farofa de Banana com Calabresa</h4>
+                                <p>Farofa especial com banana caramelizada e calabresa</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/farofa-de-banana-com-calabresa.jpeg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>🗓️ Sexta-feira</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Comida Baiana</h4>
+                                <p>Pratos típicos da culinária baiana com temperos especiais</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/comidabaiana.jpeg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Rabada</h4>
+                                <p>Rabada ensopada no ponto certo, suculenta e saborosa</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/rabada.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Moqueca de Pescada Amarela</h4>
+                                <p>Moqueca tradicional com pescada amarela e leite de coco</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/pescada-amarela-portal-minha-receita.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>🗓️ Sábado</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Feijoada</h4>
+                                <p>Feijoada completa com todos os acompanhamentos tradicionais</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/feijoada.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Sarapatel</h4>
+                                <p>Sarapatel tradicional nordestino bem temperado</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/Sarapatel.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Bobó de Camarão</h4>
+                                <p>Bobó cremoso com camarões frescos e dendê</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/bobo-de-camarao-rapido.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>🗓️ Domingo</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Dobradinha</h4>
+                                <p>Tradicional dobradinha com feijão branco e linguiça</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/dobradinha.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Quiabada</h4>
+                                <p>Quiabada com carne bovina e temperos especiais</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/Quiabada.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Strogonoff</h4>
+                                <p>Strogonoff cremoso servido com arroz e batata palha</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/strogonoff.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Moqueca de Pescada Amarela</h4>
+                                <p>Moqueca tradicional com pescada amarela e leite de coco</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/pescada-amarela-portal-minha-receita.jpg" alt="Bacalhau à Gomes Sá" class="dish-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3>🍽️ Todos os dias</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Churrasco</h4>
+                                <p>Carnes nobres grelhadas na brasa com temperos especiais</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/churrasco.jpg" alt="Churrasco" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Grelhados</h4>
+                                <p>Seleção de carnes e peixes grelhados com acompanhamentos</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/grelhados.jpg" alt="Grelhados" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Pratos Quentes</h4>
+                                <p>Variedade de pratos quentes tradicionais e saborosos</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/pratos quentes.jpeg" alt="Pratos Quentes" class="dish-image">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Saladas</h4>
+                                <p>Saladas frescas e variadas com ingredientes selecionados</p>
+                            </div>
+                            <div class="menu-image">
+                                <img src="pratos/salada.jpg" alt="Saladas" class="dish-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Captura de tela 2025-07-26 123135.png" alt="Ambiente do Restaurante Oscarito">
+                </div>
+                <div class="gallery-item">
+                    <img src="Captura de tela 2025-07-26 123146.png" alt="Pratos do Restaurante Oscarito">
+                </div>
+                <div class="gallery-item">
+                    <img src="Captura de tela 2025-07-26 123201.png" alt="Interior do Restaurante">
+                </div>
+                <div class="gallery-item">
+                    <img src="Captura de tela 2025-07-26 123227.png" alt="Buffet do Restaurante">
+                </div>
+                <div class="gallery-item">
+                    <img src="Captura de tela 2025-07-28 171233.png" alt="Especialidades da Casa">
+                </div>
+                <div class="gallery-item">
+                    <img src="Captura de tela 2025-07-26 123313.png" alt="Ambiente Familiar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato & Localização</h2>
+            <div class="contact-content-centered">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Alameda Praia do Tubarao, QA12, LT07<br>Vilas do Atlântico, Lauro de Freitas - BA<br>CEP: 42708-730</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(71) 4113-1306</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Terça a Domingo<br>11:30 às 15:15</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@oscaritorestaurante.com.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <h3>Oscarito</h3>
+                        <span>Restaurante</span>
+                    </div>
+                    <p>Sabores autênticos que tocam o coração</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (71) 4113-1306</p>
+                    <p><i class="fas fa-envelope"></i> contato@oscaritorestaurante.com.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Alameda Praia do Tubarao, QA12, LT07 - Vilas do Atlântico, Lauro de Freitas - BA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oscarito Restaurante. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="confirmation-modal" class="confirmation-modal">
+        <div class="confirmation-content">
+            <div class="check-icon-container">
+                <img id="check-gif" src="https://i.gifer.com/7efs.gif" alt="Check Animation" class="check-gif">
+            </div>
+            <h3 class="confirmation-title">Reserva Concluída!</h3>
+            <p class="confirmation-message">
+                Sua reserva foi enviada com sucesso!<br>
+                Entraremos em contato em breve para confirmar os detalhes.
+            </p>
+            <button class="confirmation-close" onclick="closeConfirmationModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Modal de Zoom da Imagem -->
+    <div id="image-modal" class="image-modal">
+        <div class="image-modal-content">
+            <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+            <div class="image-container">
+                <img id="modal-image" src="" alt="" class="modal-image">
+            </div>
+            <div class="zoom-controls">
+                <button onclick="zoomIn()" class="zoom-btn">+</button>
+                <button onclick="zoomOut()" class="zoom-btn">-</button>
+                <button onclick="resetZoom()" class="zoom-btn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
