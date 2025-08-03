@@ -275,7 +275,7 @@ document.querySelectorAll('.contact-item').forEach(item => {
         
         item.addEventListener('click', () => {
             if (icon.classList.contains('fa-phone')) {
-                window.location.href = 'tel:+557141131306';
+                window.location.href = 'tel:7141131306';
             } else if (icon.classList.contains('fa-envelope')) {
                 window.location.href = 'mailto:contato@oscaritorestaurante.com.br';
             } else if (icon.classList.contains('fa-map-marker-alt')) {
