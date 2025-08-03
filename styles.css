@@ -799,13 +799,13 @@ h4 {
         top: 90px;
         flex-direction: column;
         background-color: white;
-        width: 100%;
+        width:100%;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 1.5rem 0;
         z-index: 999;
-        height: calc(100vh - 90px);
+        height: calc(60vh - 90px);
         overflow-y: auto;
     }
     
