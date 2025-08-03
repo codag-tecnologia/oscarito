@@ -823,7 +823,7 @@ h4 {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 100px 15px 80px;
+        padding: 120px 15px 100px;
         overflow: visible;
         min-height: auto;
         height: auto;
@@ -888,17 +888,6 @@ h4 {
         justify-content: center;
     }
     
-    /* Ajuste dos dots do carrossel no mobile */
-    .carousel-dots {
-        bottom: -40px;
-        position: relative;
-        margin-top: 20px;
-    }
-    
-    .carousel-container {
-        margin-bottom: 20px;
-    }
-    
     .gallery-grid {
         grid-template-columns: 1fr;
     }
@@ -948,7 +937,7 @@ h4 {
     
     /* Ajuste adicional do hero para telas pequenas */
     .hero {
-        padding: 80px 10px 60px;
+        padding: 100px 10px 80px;
         min-height: auto;
         height: auto;
         overflow: visible;
