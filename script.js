@@ -275,11 +275,11 @@ document.querySelectorAll('.contact-item').forEach(item => {
         
         item.addEventListener('click', () => {
             if (icon.classList.contains('fa-phone')) {
-                window.location.href = 'tel:+5511123456789';
+                window.location.href = 'tel:+557141131306';
             } else if (icon.classList.contains('fa-envelope')) {
                 window.location.href = 'mailto:contato@oscaritorestaurante.com.br';
             } else if (icon.classList.contains('fa-map-marker-alt')) {
-                window.open('https://maps.google.com/?q=Rua+das+Flores+123+Centro+São+Paulo', '_blank');
+                window.open('https://www.google.com/maps/place/Oscarito+Restaurante/@-12.8866641,-38.3068814,849m/data=!3m2!1e3!4b1!4m6!3m5!1s0x7163de213ba6b0f:0x25418ffcb9dac860!8m2!3d-12.8866641!4d-38.3020105!16s%2Fg%2F1tf7sb9f?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D', '_blank');
             }
         });
     }
