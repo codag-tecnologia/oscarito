@@ -810,24 +810,47 @@ h4 {
         left: 0;
     }
     
+    /* Correção do navbar no mobile */
+    .nav-container {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+    
+    .hamburger {
+        margin-right: 0;
+    }
+    
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 120px 20px 60px;
+        padding: 120px 15px 60px;
+        overflow-x: hidden;
     }
     
     .hero-content {
         margin-right: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     
     .hero h1 {
         font-size: 2.5rem;
     }
     
+    /* Correção do carrossel no mobile */
+    .carousel-container {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    
+    .carousel-circle {
+        width: 260px;
+        height: 260px;
+    }
+    
     .hero-placeholder {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
     }
     
     .hero-placeholder i {
@@ -880,14 +903,25 @@ h4 {
         font-size: 2rem;
     }
     
+    /* Carrossel ainda menor para telas pequenas */
+    .carousel-container {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .carousel-circle {
+        width: 220px;
+        height: 220px;
+    }
+    
     .hero-placeholder {
-        width: 250px;
-        height: 250px;
+        width: 240px;
+        height: 240px;
     }
     
     .image-placeholder {
-        width: 250px;
-        height: 250px;
+        width: 240px;
+        height: 240px;
     }
     
     .menu-category {
@@ -896,6 +930,15 @@ h4 {
     
     .reservation-form {
         padding: 1.5rem;
+    }
+    
+    /* Ajuste adicional do hero para telas pequenas */
+    .hero {
+        padding: 100px 10px 40px;
+    }
+    
+    .hero-content {
+        margin-bottom: 1.5rem;
     }
 }
 
