@@ -832,7 +832,7 @@ h4 {
     .hero-content {
         margin-right: 0;
         margin-bottom: 2rem;
-        margin-top: 10px;
+        padding-top: 10px;
     }
     
     .hero h1 {
