@@ -256,6 +256,19 @@ h4 {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Quando há apenas um botão, centralizar */
+.hero-buttons:has(.btn:only-child) {
+    justify-content: center;
+}
+
+/* Fallback para navegadores que não suportam :has() */
+@supports not (selector(:has(.btn))) {
+    .hero-buttons .btn:only-child {
+        margin: 0 auto;
+    }
 }
 
 .hero-image {
